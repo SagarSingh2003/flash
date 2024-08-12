@@ -53,7 +53,9 @@ const CreateCards = () => {
 
     return (
         <section>
-            <Header />
+            <section className="flex items-center justify-center">
+                <Header />
+            </section>
             <section className="m-[40px] mt-[100px]">
                 <TableOfCards cards={userCards} userEmail={user.emailAddresses[0].emailAddress} setRefresh={setRefresh}/>
             </section>

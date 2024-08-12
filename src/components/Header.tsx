@@ -1,22 +1,56 @@
 import {  UserButton, useUser } from "@clerk/clerk-react";
 
-
-const Header = () => {
+import {
+    Menubar,
+    MenubarMenu,
+    MenubarTrigger,
+  } from "@/components/ui/menubar"
+  
+  export default function Header() {
 
     const {user} = useUser();
 
     console.log(user);
 
-
     return (
-        <section className="text-[16px] text-gray-500 absolute top-0 left-0 flex h-[40px] w-[100%] items-center justify-end gap-10 p-[20px] max-[740px]:text-[14px]">
-            <a href="/" className="hover:text-black hover:cursor-pointer">Study</a>
-            <a href="/createCards" className="hover:text-black hover:cursor-pointer">Create Cards</a>
-            <a href="/share" className="hover:text-black hover:cursor-pointer">Share</a>
-            <a href="/import" className="hover:text-black hover:cursor-pointer">Import</a>
-            {!user ? <a href="/signin">Sign In</a> : <UserButton />}
-        </section>
-    )
-}
 
-export default Header;
+    <section className="flex items-center justify-center">
+      <Menubar>
+        <MenubarMenu>
+         <a href="/" className="hover:text-black hover:cursor-pointer">
+          <MenubarTrigger>
+          Study
+          </MenubarTrigger>
+          </a>
+        </MenubarMenu>
+        <MenubarMenu>
+         <a href="/createCards" className="hover:text-black text-[13px] hover:cursor-pointer">
+          <MenubarTrigger>
+            CreateCards
+          </MenubarTrigger>
+          </a>
+        </MenubarMenu>
+        <MenubarMenu>
+        <a href="/share" className="hover:text-black hover:cursor-pointer">
+          <MenubarTrigger>
+          Share
+          </MenubarTrigger>
+         </a>
+        </MenubarMenu>
+        <MenubarMenu>
+        <a href="/import" className="hover:text-black hover:cursor-pointer">
+          <MenubarTrigger>
+          Import
+          </MenubarTrigger>
+        </a>
+        </MenubarMenu>
+        <MenubarMenu>
+            {!user ? <a href="/signin">
+                <MenubarTrigger><span className="text-[13px]">SignIn</span></MenubarTrigger>
+            </a> : <UserButton />}
+        </MenubarMenu>
+      </Menubar>
+      </section>
+    )
+  }
+  

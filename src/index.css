@@ -78,7 +78,7 @@
 @media screen and (max-width :750px){
     .card-area{
        min-width: 90% !important;
-       max-width: 100% !important;
+       max-width: 90% !important;
        position : relative;
     }
 
@@ -87,7 +87,7 @@
       max-width : 100% !important
     }
     .card-head {
-      margin-top: "160px" !important;
+      margin-top: "50px" !important;
       min-width: 90% !important;
       max-width: 100% !important;
     }
@@ -109,8 +109,12 @@
     }
 
     .main-card{
-      width: 100% !important;
+      width: 100% ;
       display: flex;
+    }
+
+    .main-card.confetti{
+      max-width: 100px !important;
     }
 
     .card-head-section{

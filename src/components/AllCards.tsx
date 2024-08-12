@@ -5,12 +5,12 @@ import Intro from "./Intro";
 function AllCards() {
 
   return (
-    <section className='flex  flex-col items-center justify-center '>
-      <Header />
-      <section className="mt-[50px]">
+    <section className='flex  flex-col items-center justify-center max-w-[100%]'>
+        <Header />
+      <section className="mt-[0px] flex items-center justify-center max-w-[100%]">
         <FlashCard />
       </section>
-      <section className="m-[50px] mb-[50px]">
+      <section className="my-[50px] mb-[50px]">
         <Intro />
       </section>
     </section>

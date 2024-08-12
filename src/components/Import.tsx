@@ -23,13 +23,13 @@ const Import = () => {
     return (
 
 
-        <>
+        <section className="flex flex-col items-center justify-center">
         {/* @ts-ignore */}
         <Header></Header>
             <section className="flex flex-col gap-10 items-center justify-center h-[100%]">
 
                 <section className="my-[20px] mb-[50px] text-center">
-                    <h2 className="text-[35px] font-extrabold m-[10px] mt-[150px]"> Import notes !</h2>
+                    <h2 className="text-[35px] font-extrabold m-[10px] mt-[70px]"> Import notes !</h2>
                     <p>To import notes , you need to paste the data that you copied from your friend's share section into the input box below !</p>
                 </section>
                 <section className="min-w-[700px] max-[740px]:max-w-[300px] max-[740px]:min-w-[300px] flex flex-col ">
@@ -63,7 +63,7 @@ const Import = () => {
                 </section>
             </section>
         
-        </>
+        </section>
     )
 }
 

@@ -14,7 +14,7 @@ import {
 
     return (
 
-    <section className="flex items-center justify-center">
+    <section className="flex items-center justify-evenly ">
       <Menubar>
         <MenubarMenu>
          <a href="/" className="hover:text-black hover:cursor-pointer">

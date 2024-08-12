@@ -78,9 +78,9 @@ export const FlashCard = () => {
     }
 
     return (
-        <section className="card-area max-[740px]:mt-[150px]">
+        <section className="card-area ">
                 <>
-                <section className=" card-head flex gap-3 m-[30px] w-[40%] border border-gray-300 p-[20px] pr-[0] rounded-lg justify-center min-w-[740px] md:max-w-[300px]">
+                <section className=" card-head max-[390px]:box-border max-[390px]:ml-[20px] flex gap-3 m-[30px] w-[40%] border border-gray-300 p-[20px] pr-[0] rounded-lg justify-center min-w-[740px] md:max-w-[300px]">
                     <section className="flex flex-col items-center justify-center gap-3 w-[80%] ">
                             <div className="bg-[#E5E7EB] w-[100%] h-[10px] rounded-md m-[5px]">
                                 {/* <div className="h-[100%] bg-[#1E293B] rounded-md animate-width " style={{width : `${percentage}% `}}></div> */}
@@ -144,7 +144,7 @@ export const FlashCard = () => {
                 {
                     cards[currentCardIndex]?.id ? 
 
-                    <section className="main-card min-w-[740px] min-h-[400px] w-[40%] ">
+                    <section className="main-card min-w-[740px] min-h-[400px] w-[40%] max-[390px]:box-border ">
                     {/* <section className="relative preserve-3d group-hover:my-rotate-y-180 duration-500 border border-gray-300 rounded-lg w-[100%] m-[30px] h-[100%] flex flex-col justify-around items-center">
                             <div className=" absolute top-0 left-0 right-0 bottom-0 w-[100%] min-h-[400px] backface-hidden flex flex-col items-center justify-around">
                                 
@@ -157,7 +157,7 @@ export const FlashCard = () => {
                         style={{ width: "100%", height: "100%" , minHeight : "400px" , minWidth : "740px" }}
                         transition={{ duration: 0.7 }}
                         animate={{ rotateY: flip ? 0 : 180 }}
-                        className="border main-card-div border-gray-300 rounded-lg w-[100%] m-[30px] h-[100%] flex flex-col justify-around items-center"
+                        className="border main-card-div border-gray-300 rounded-lg w-[100%] m-[30px] max-[390px]:ml-[20px] h-[100%] flex flex-col justify-around items-center"
                     >
                         <motion.div
                         style={{minHeight : "400px" , minWidth : "740px" , position : "relative"}}
@@ -192,12 +192,12 @@ export const FlashCard = () => {
 
                 : 
 
-                <section className=" main-card min-h-[400px] min-w-[740px] max-w-[740px] flex items-center justify-center border border-gray-300 rounded-lg m-[30px]">
+                <section className=" max-[740px]:ml-[20px] main-card confetti min-h-[400px]  min-w-[740px] max-w-[740px] max-[740px]:min-w-[300px] max-[740px]:max-w-[90%]   flex items-center justify-center border border-gray-300 rounded-lg m-[30px]">
                     <img src={confetti} alt="you have reached the end" style={{height: "300px"}}/>
                 </section>
 
                 }
-                <section className=" card-foot flex items-center justify-between w-[40%] m-[30px] min-w-[740px]">
+                <section className=" card-foot max-[390px]:ml-[20px] flex items-center justify-between w-[40%] m-[30px] min-w-[740px]">
 
                     <div className=" card-foot-div flex items-center max-[740px]:p-[5px] max-[740px]:m-[10px] max-[740px]:w-[100%] justify-center border border-gray-300 p-[15px] rounded-lg hover:text-white hover:bg-[#22C55E] min-w-[192px] w-[30%]"
                     

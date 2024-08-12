@@ -12,7 +12,7 @@ import { Toaster } from "@/components/ui/toaster"
 function App() {
 
   return (
-    <section>
+    <section className='flex items-center justify-center max-[740px]:max-w-[100%] max-[740px]:min-w-[100%]'>
       <SignedOut>
 
         <BrowserRouter basename="/">

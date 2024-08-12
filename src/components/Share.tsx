@@ -47,9 +47,9 @@ const Share = () => {
     } , [copied])
 
     return(
-        <>
+        <section className="flex flex-col">
             <Header></Header>
-            <section className="flex flex-col items-center justify-center h-[100vh]">
+            <section className="flex flex-col items-center justify-center h-[100%] mt-[30px]">
 
                 <section className="my-[20px] text-center">
                     <h2 className="text-[35px] font-extrabold"> Share your notes !</h2>
@@ -78,7 +78,7 @@ const Share = () => {
                     <pre className="sharable-cards">{`${JSON.stringify(cards , null , "   ")}`}</pre>
                 </section>
             </section>
-        </>
+        </section>
     )
 }
 

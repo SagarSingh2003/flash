@@ -11,7 +11,7 @@ const Share = () => {
 
     if(!user){
         // @ts-ignore 
-        window.location('/signin')
+        window.location ='/signin'
     }
 
     const [cards , setCards] = useState([{}]);

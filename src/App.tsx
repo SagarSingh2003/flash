@@ -13,8 +13,6 @@ function App() {
 
   return (
     <section>
-      <SignedOut>
-
         <BrowserRouter basename="/">
           <Routes>
             <Route path="/"  element={<AllCards />} /> 
@@ -22,20 +20,10 @@ function App() {
             <Route path='/signin' element={<Signin />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/share" element={<Share />} />
-          </Routes>
-        </BrowserRouter>
-        
-      </SignedOut>
-      <SignedIn>
-          <BrowserRouter basename="/">
-          <Routes>
-            <Route path="/" element={<AllCards />}/> 
-            <Route path="/createCards" element={<CreateCards />} />
-            <Route path="/share" element={<Share />} />
             <Route path="/import" element={<Import />} />
           </Routes>
         </BrowserRouter>
-      </SignedIn>
+
       < Toaster />
   </section>
   )

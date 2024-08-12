@@ -22,6 +22,7 @@ function App() {
             <Route path='/signin' element={<Signin />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/share" element={<Share />} />
+            <Route path="/import" element={<Import />} />
           </Routes>
         </BrowserRouter>
         

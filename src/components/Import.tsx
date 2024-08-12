@@ -19,7 +19,6 @@ const Import = () => {
         window.location = "/signin"
     }
 
-    console.log(cardData);
 
     return (
 

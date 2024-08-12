@@ -1,7 +1,6 @@
 import './App.css'
 import { BrowserRouter , Routes , Route} from "react-router-dom";
 import AllCards from './components/AllCards';
-import { SignedIn, SignedOut} from '@clerk/clerk-react';
 import CreateCards from './components/CreateCards';
 import Signin from './components/auth/Signin';
 import Signup from './components/auth/Signup';

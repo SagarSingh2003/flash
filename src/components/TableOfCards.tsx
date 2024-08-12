@@ -38,7 +38,7 @@ import InputCard from "./InputCard";
     return (
     <>
 
-    <section className="flex items-center justify-start">
+    <section className="flex items-center justify-start max-[740px]:flex-col max-[740px]:gap-2 ">
       <section className="min-w-[150px] flex items-center " onClick={() => {
         setShowCreateCard((state) =>  !state);
       }}>

@@ -26,7 +26,7 @@ const Import = () => {
         <>
         {/* @ts-ignore */}
         <Header></Header>
-            <section className="flex flex-col gap-10 items-center justify-center h-[100vh]">
+            <section className="flex flex-col gap-10 items-center justify-center h-[100%]">
 
                 <section className="my-[20px] mb-[50px] text-center">
                     <h2 className="text-[35px] font-extrabold m-[10px] mt-[150px]"> Import notes !</h2>
@@ -36,9 +36,7 @@ const Import = () => {
                     <span>Enter data here : </span>
                     <textarea className="border border-gray-300 rounded-lg p-[10px] w-[100%]" name="card-import" id="" onChange={(e) => setCardData(JSON.parse(e.target.value))}></textarea>
                 </section>
-                <section className="min-w-[700px] min-h-[400px] max-[740px]:max-w-[90%] max-[740px]:min-w-[80%] max-w-[700px] m-[40px] max-h-[400px] border border-gray-300 overflow-y-scroll overflow-x-scroll">
-                    <pre className="sharable-cards">{`${JSON.stringify(cardData , null , "   ")}`}</pre>
-                </section>
+
                 <section>
                     {!cardData ? 
                         <Button className="bg-gray-300 hover:bg-gray-300">Import</Button>
@@ -59,6 +57,9 @@ const Import = () => {
                         }}
                         >{importing ? 'Importing....' : 'Import'}</Button>
                     }
+                </section>
+                <section className="min-w-[700px] min-h-[400px] max-[740px]:max-w-[90%] max-[740px]:min-w-[80%] max-w-[700px] m-[40px] max-h-[400px] border border-gray-300 overflow-y-scroll overflow-x-scroll">
+                    <pre className="sharable-cards">{`${JSON.stringify(cardData , null , "   ")}`}</pre>
                 </section>
             </section>
         
